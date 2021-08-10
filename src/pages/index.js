@@ -9,6 +9,7 @@ const HomeLazy = Loadable({
   loading: loader,
 });
 
+
 const Index = () => {
   return (
     <>

@@ -39,12 +39,14 @@ export default function About() {
   return (
     <section className={cn("about-section", { "is-reveal": reveal })} data-scroll-section>
       <SectionHeader title="about" />
-      <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })} >
-        Flirty Flowers is a blog about flowers and the floral designers who make
-        them into art. Creativity and the art of ‘making’ require dialogue. The
-        full purpose of the Flirty Flowers blog is to encourage and inspire. We
-        value art, we value insight, and we value opinion.
-      </p>
+      <h2 ref={ref} id="headline" className={cn({ "is-reveal": reveal })} >
+        Tech-savvy Full Stack Web Developer adept at contributing to highly collaborative work
+        environment, finding solutions and determining customer satisfaction. Proven experience
+        developing consumer-focused applications using React.js and JavaScript. Knowledgeable of
+        backend and frontend development requirements. Handles any part of process with ease.
+        Focused on creating clean, robust code with exceptional security. Achieves compatibility targets
+        while meeting and exceeding customer demands
+      </h2>
     </section>
   )
 }

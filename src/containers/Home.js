@@ -55,8 +55,8 @@ const Home = () => {
 
       {preloader ? (
         <div className="loader-wrapper absolute">
-          <h1>Made In</h1>
-          <h2>Latvia</h2>
+          <h1>Welcome</h1>
+          <h2>Please wait</h2>
         </div>
       ) :
         (
