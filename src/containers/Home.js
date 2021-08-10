@@ -17,7 +17,6 @@ const Home = () => {
   const [timer, setTimer] = useState(3);
   const id = useRef(null);
 
-
   useLocoScroll(!preloader);
 
   useEffect(() => {
@@ -56,7 +55,7 @@ const Home = () => {
 
       {preloader ? (
         <div className="loader-wrapper absolute">
-          <h1>Flirty Flowers</h1>
+          <h1>Made In</h1>
           <h2>Latvia</h2>
         </div>
       ) :
