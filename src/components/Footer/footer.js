@@ -42,16 +42,29 @@ export default function Footer() {
   }, [reveal]);
 
   return (
-    <section className="footer" data-scroll-section>
-      <SectionHeader title="Made in" />
-
-      <h1
-        className={cn("location", { "is-reveal": reveal })}
-        id="location-text"
-        ref={ref}
-      >
-        Riga
-      </h1>
+    <section className="footer" data-scroll-section >
+      <SectionHeader title="Let's talk" />
+      <a href="https://www.linkedin.com/in/fillips-ickevics-1560041b3/" style={{ textDecoration: 'none', color: '#222' }}>
+        <h1
+       className="location"
+        >
+          LinkedIn
+        </h1>
+      </a>
+      <a href="https://github.com/fickevics-makor" style={{ textDecoration: 'none', color: '#222' }}>
+        <h1
+       className="location"
+        >
+          Github
+        </h1>
+      </a>
+      <a href="mailto: fill.ickevics@example.com" style={{ textDecoration: 'none', color: '#222' }}>
+        <h1
+       className="location"
+        >
+          Email
+        </h1>
+      </a>
     </section>
   );
 }

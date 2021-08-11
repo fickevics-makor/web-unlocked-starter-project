@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 
 import gsap from "gsap";
 import SplitText from "../../utils/Split3.min";
 import "./style.scss";
+
 export default function Navbar() {
 
   useEffect(() => {
@@ -10,11 +11,6 @@ export default function Navbar() {
       type: "lines",
       linesClass: "lineChildren",
     });
-
-    const splitParent = new SplitText("#header-text", {
-      type: "lines",
-      linesClass: "lineParent",
-    })
 
     gsap.to(split.lines, {
       duration: 1,
@@ -25,14 +21,17 @@ export default function Navbar() {
     })
 
   }, [])
+  
   return (
+    // <header>
     <section className="header-container" data-scroll-section>
       <ul className="header-menu">
-        <li>Intro</li>
+        {/* <li>Intro</li>
         <li>About</li>
-        <li>Featured</li>
+        <li>Featured</li> */}
       </ul>
       <h1 id="header-text">Fill Ickevics</h1>
     </section>
+    // </header>
   )
 }

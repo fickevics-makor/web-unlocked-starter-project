@@ -66,7 +66,7 @@ const Home = () => {
             data-scroll-container
             ref={ref}
           >
-            <Navbar />
+            {/* <Navbar /> */}
             <Header />
             <Featured />
             <About />

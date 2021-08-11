@@ -38,7 +38,7 @@ export default function About() {
 
   return (
     <section className={cn("about-section", { "is-reveal": reveal })} data-scroll-section>
-      <SectionHeader title="about" />
+      <SectionHeader title="about me" />
       <h2 ref={ref} id="headline" className={cn({ "is-reveal": reveal })} >
         Tech-savvy Full Stack Web Developer adept at contributing to highly collaborative work
         environment, finding solutions and determining customer satisfaction. Proven experience

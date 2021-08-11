@@ -1,49 +1,136 @@
-.featured-section {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  align-items: center;
+// .featured-section {
+//   display: grid;
+//   grid-template-columns: 1fr 2fr;
+//   align-items: center;
+
+//   img {
+//     clip-path: inset(100% 0% 0% 0%);
+//     transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+
+//     &.is-reveal {
+//       clip-path: inset(0% 0% 0% 0%);
+//     }
+//   }
+
+//   h6 {
+//     font-size: 22px;
+//     text-transform: uppercase;
+//     font-weight: 500;
+//   }
+
+//   .featured-row-layout,
+//   .featured-column-layout {
+//     display: grid;
+//     gap: 10px;
+//   }
+
+//   .featured-row-layout {
+//     grid-template-rows: repeat(2, auto);
+
+//     img {
+//       width: 100%;
+//       object-fit: cover;
+//     }
+//   }
+
+//   .featured-column-layout {
+//     grid-template-columns: 60px auto;
+//     align-items: flex-start;
+
+//     img {
+//       width: 100%;
+//       height: 125vh;
+//       object-fit: cover;
+//     }
+
+//     h6 {
+//       transform: translateX(100%) rotate(-90deg);
+//       transform-origin: left bottom;
+//       justify-self: self-end;
+//     }
+
+//     h2 {
+//       font-size: 3vh;
+//       line-height: 1.12;
+//       opacity: 0;
+
+//       >div {
+//         opacity: 0;
+//         transform: translate(0);
+//       }
+
+//       &.is-reveal {
+//         opacity: 1
+//       }
+//     }
+//   }
+// }
+
+
+
+
+.paper-wrapper {
+  height: 90vh;
+  // width: 100vh;
+  // background: black;
 
   img {
+    position: absolute;
+    max-height: 90%;
+    object-fit: contain;
+    // top: 55%;
+    left: 30%;
+    z-index: 2;
+
+ 
+
     clip-path: inset(100% 0% 0% 0%);
-    transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+    
+        &.is-reveal {
+          clip-path: inset(0% 0% 0% 0%);
+        }
+  }
 
-    &.is-reveal {
-      clip-path: inset(0% 0% 0% 0%);
+  .text-parent {
+    position: absolute;
+    // top: 35%;
+
+    &:first-of-type{
+      z-index: 1;
+    }
+
+    &:last-of-type{
+      z-index: 3;
+    }
+
+    h1 {
+      // color: white;
+      line-height: 110%;
+      font-size: 8.1vw;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      font-weight: bold;
+      font-family: "Bai Jamjuree";
+
+      opacity: 0;
+
+      &.is-reveal {
+        opacity: 1;
+      }
+      
+      &.outline {
+        -webkit-text-stroke: 3px black;
+        text-stroke: 1px black;
+        color: transparent;
+        &.is-reveal {
+          opacity: 1;
+        }
+      }
+
     }
   }
 
-  h6 {
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
 
-  .featured-row-layout,
-  .featured-column-layout {
-    display: grid;
-    gap: 10px;
-  }
-
-  .featured-row-layout {
-    grid-template-rows: repeat(2, auto);
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-  .featured-column-layout  {
-    grid-template-columns: 100px auto;
-    align-items: flex-end;
-    img {
-      width: 100%;
-      height: 125vh;
-      object-fit: cover;
-    }
-
-    h6 {
-      transform: translateX(100%) rotate(-90deg);
-      transform-origin: left bottom;
-      justify-self: self-end;
-    }
-  }
 }
