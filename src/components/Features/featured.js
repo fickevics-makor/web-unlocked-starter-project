@@ -1,5 +1,5 @@
 import "./style.scss";
-import me from "../../utils/images/me.jpeg"
+import me from "../../../static/images/me.jpeg"
 import React, { useEffect, useRef, useState } from "react";
 import useOnScreen from "../../hooks/useOnScreen";
 import gsap from "gsap";

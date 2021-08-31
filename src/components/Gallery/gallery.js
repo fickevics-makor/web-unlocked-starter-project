@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import useOnScreen from "../../hooks/useOnScreen";
-import magniv from "../../utils/images/magniv.png"
-import koifish from "../../utils/images/koifish.png"
-import enigma from "../../utils/images/enigma.png"
-import ob from "../../utils/images/ob.png"
-import derivledger from "../../utils/images/derivledger.png"
+import magniv from "../../../static/images/magniv.png"
+import koifish from "../../../static/images/koifish.png"
+import enigma from "../../../static/images/enigma.png"
+import ob from "../../../static/images/ob.png"
+import derivledger from "../../../static/images/derivledger.png"
 import cn from "classnames";
 
 import "./style.scss";
@@ -16,42 +16,36 @@ const images = [
     src: magniv,
     title: "Magniv",
     subtitle: "Modeling Agency",
-    category: "Shooting / Adv.Campaing",
     link: 'https://tender-northcutt-d55c14.netlify.app/'
   },
   {
     src: ob,
     title: "Crypt Analytics",
     subtitle: "Order Book",
-    category: "Shooting / Adv.Campaing",
     link: 'https://ob.enigma-securities.io/'
   },
   {
     src:enigma,
     title: "Enigma Securities",
     subtitle: "Exchange",
-    category: "Shooting / Adv.Campaing",
     link: 'https://enigma-securities.io/'
   },
   {
     src: derivledger,
     title: "Derivledger",
     subtitle: "Frictionless Brokerage",
-    category: "Shooting / Adv.Campaing",
     link: 'https://derivledger.com/'
   },
   {
     src: koifish,
     title: "KoiFish Project",
     subtitle: "Crypto Token",
-    category: "Shooting / Adv.Campaing",
     link: 'https://www.goldkoicoin.com/'
   },
 ];
 
 function GalleryItem({
   src,
-  category,
   subtitle,
   title,
   updateActiveImage,
@@ -135,7 +129,7 @@ export default function Gallery({ src, index, columnOffset }) {
         </div>
         {images.map((image, index) => (
           <GalleryItem
-            key={src}
+            key={index}
             index={index}
             {...image}
             updateActiveImage={handleUpdateActiveImage}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import photos from "../../data"
-import me from "../../utils/images/me.jpeg"
+import me from "../../../static/images/me.jpeg"
 
 
 export default function Featured() {
