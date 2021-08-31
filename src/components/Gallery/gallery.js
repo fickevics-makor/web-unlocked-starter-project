@@ -5,6 +5,7 @@ import useOnScreen from "../../hooks/useOnScreen";
 import magniv from "../../utils/images/magniv.png"
 import koifish from "../../utils/images/koifish.png"
 import enigma from "../../utils/images/enigma.png"
+import ob from "../../utils/images/ob.png"
 import derivledger from "../../utils/images/derivledger.png"
 import cn from "classnames";
 
@@ -19,9 +20,16 @@ const images = [
     link: 'https://tender-northcutt-d55c14.netlify.app/'
   },
   {
+    src: ob,
+    title: "Crypt Analytics",
+    subtitle: "Order Book",
+    category: "Shooting / Adv.Campaing",
+    link: 'https://ob.enigma-securities.io/'
+  },
+  {
     src:enigma,
     title: "Enigma Securities",
-    subtitle: "Cryptocurrency Exchange",
+    subtitle: "Exchange",
     category: "Shooting / Adv.Campaing",
     link: 'https://enigma-securities.io/'
   },
